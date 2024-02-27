@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Medias</title>
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
 </head>
+
 <body>
-    <header>
-        <img src="./images/logo.png" alt="capelo e diploma">
-        <h1>Calculadora de Mèdias</h1>
-    </header>
-    <form action="">
-        <input type="text" required placeholder="Nome da Atividade">
-        <input type="number" required placeholder="Nota da Atividade" min="0" max="10">
-        <button type="submit">Adicionar +</button>
-    </form>
-    <table>
-        <thead>
-            <tr>
-                <th>Nome da Atividade</th>
-                <th>Nota da atividade</th>
-                <th>Aprovado?</th>
-            </tr>
+    <div class="container">
+        <header>
+            <img src="./images/logo.png" alt="capelo e diploma">
+            <h1>Calculadora de Mèdias</h1>
+        </header>
+        <form action="">
+            <input type="text" required placeholder="Nome da Atividade">
+            <input type="number" required placeholder="Nota da Atividade" min="0" max="10">
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome da Atividade</th>
+                    <th>Nota da atividade</th>
+                    <th>Aprovado?</th>
+                </tr>
             <tbody>
                 <tr>
                     <td>Atividade 1</td>
@@ -35,10 +45,12 @@
                 <tr>
                     <td>Media final</td>
                     <td>7</td>
-                    <td>Aprovado</td>
+                    <td><span class="resultado reprovado">Aprovado</span></td>
                 </tr>
             </tfoot>
-        </thead>
-    </table>
+            </thead>
+        </table>
+    </div>
 </body>
+
 </html>
